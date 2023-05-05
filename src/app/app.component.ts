@@ -20,4 +20,12 @@ export class AppComponent {
   get tasks() {
     return this.allTasks;
   }
+
+  addTask(description: string) {
+    this.allTasks.unshift({
+      description,
+      completed: false,
+      dateAdded: new Date(),
+    });
+  }
 }
