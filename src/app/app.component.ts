@@ -11,11 +11,9 @@ export class AppComponent {
 
   allTasks: Task[] = [
     {
-      title: 'Walk the dog',
       description: 'Walking the dog around the block',
       completed: false,
       dateAdded: new Date(),
-      dateUpdated: new Date(),
     },
   ];
 
